@@ -42,20 +42,6 @@ export const Navigations: Navigation[] = [
         label: { en: 'Users', id: 'Pengguna' },
         to: '/iam/users',
         icon: UsersIcon,
-        children: [
-          {
-            label: { en: 'Payments', id: 'Pembayaran' },
-            to: '/transaction/payments',
-            icon: CreditCardIcon,
-            children: [
-              {
-                label: { en: 'Payments', id: 'Pembayaran' },
-                to: '/transaction/payments',
-                icon: CreditCardIcon,
-              },
-            ],
-          },
-        ],
       },
       {
         label: { en: 'Roles', id: 'Peran' },

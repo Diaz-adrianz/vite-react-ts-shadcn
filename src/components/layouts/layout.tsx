@@ -24,7 +24,6 @@ import {
   ChevronsUpDown,
   Command,
   LogOutIcon,
-  MoonIcon,
   SidebarIcon,
   UserIcon,
 } from 'lucide-react';
@@ -44,6 +43,7 @@ import {
   DropdownMenuTrigger,
 } from '../ui/dropdown-menu';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
+import ThemeSelect from '../molecules/theme-select';
 
 const View = () => {
   const { toggleSidebar, isMobile } = useSidebar();
@@ -57,9 +57,7 @@ const View = () => {
             <SidebarIcon />
           </Button>
           <div className="ms-auto"></div>
-          <Button variant="ghost" size="icon">
-            <MoonIcon />
-          </Button>
+          <ThemeSelect />
           <Button variant="ghost" size="icon">
             <BellIcon />
           </Button>

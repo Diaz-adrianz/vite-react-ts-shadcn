@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import WithTooltip from '@/components/with-tooltip/with-tooltip';
+import WithTooltip from '@/components/molecules/with-tooltip';
 
 const Home = () => {
   return (
