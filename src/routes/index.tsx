@@ -1,19 +1,14 @@
 import AuthLayout from '@/components/layouts/auth-layout';
 import Layout from '@/components/layouts/layout';
-import Home from '@/pages/Home';
 import { createBrowserRouter, RouteObject } from 'react-router-dom';
 import authRoutes from './auth.routes';
+import homeRoutes from './home.routes';
 
 const routes: RouteObject[] = [
   {
     path: '',
     element: <Layout />,
-    children: [
-      {
-        path: '',
-        element: <Home />,
-      },
-    ],
+    children: homeRoutes,
   },
   {
     path: 'auth',
